@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_modulo_alex_prueba_user,modulo.alex.prueba,model_modulo_alex_prueba,base.group_user,0,0,0,0
+access_modulo_alex_prueba_reader,modulo.alex.prueba.reader,model_modulo_alex_prueba,modulo_alex.group_modulo_alex_reader,1,1,0,0
+access_modulo_alex_prueba_manager,modulo.alex.prueba.manager,model_modulo_alex_prueba,modulo_alex.group_modulo_alex_manager,1,1,1,1

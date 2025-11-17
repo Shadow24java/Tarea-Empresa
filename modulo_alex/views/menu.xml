@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_modulo_alex_root" name="Módulo Alex"/>
+        <menuitem id="menu_modulo_alex_registros" name="Registros de prueba">
+            <menuitem id="menu_modulo_alex_root" action="action_modulo_alex_modelo"/>
+        </menuitem> 
+</odoo>

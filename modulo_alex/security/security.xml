@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_modulo_alex_reader" model="res.groups">
+        <field name="name">Modulo Alex / Lector</field>
+        <field name="category_id" ref="base.module_category_ejemplo_ejemplo"/>
+        <field name="comment">Usuario con permisos de lectura y edición sobre los modelos de Módulo Alex.</field>
+        </record>
+    <record id="group_modulo_alex_manager" model="res.groups">
+        <field name="name">Modulo Alex / Administrador</field>
+        <field name="category_id" ref="base.module_category_ejemplo_ejemplo"/>
+        <field name="comment">Usuario con permisos completos sobre los modelos de Módulo Alex.</field>
+    </record>
+</odoo>

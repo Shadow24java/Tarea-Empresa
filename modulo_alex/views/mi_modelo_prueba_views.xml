@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mi_modelo_prueba_tree" model="ir.ui.view">
+        <field name="name">modulo_alex_prueba.list</field>
+        <field name="model">modulo_alex_prueba</field>
+        <field name="arch" type="xml">
+            <list string="Registros de Prueba" editable="bottom">
+                <field name="name"/>
+                <field name="descripcion"/>
+                <field name="fecha"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_mi_modelo_prueba_form" model="ir.ui.view">
+        <field name="name">modulo_alex_prueba.form</field>
+        <field name="model">modulo_alex_prueba</field>
+        <field name="arch" type="xml">
+            <form string="Registro de Prueba">
+                <sheet>
+                    <label for="ex_field" class="o_stat_text">Example</label>
+                    <field name="ex_field" class="o_stat_value"/>
+
+                    <div class="oe_title">
+                        
+                       
+                        <field name="ex_field_2" class="mb16"/>
+                        <field name="ex_field_3" invisible="1"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_modulo_alex_modelo" model="ir.actions.act_window">
+        <field name="name">Registros</field>
+        <field name="res_model">modulo_alex_prueba</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
