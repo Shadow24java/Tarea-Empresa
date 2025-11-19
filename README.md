@@ -98,10 +98,3 @@ Se registra un ordenador con:
 - Incidencias
 
 Odoo calcula automáticamente el precio total sumando todos los componentes asignados.
-
----
-
-## 🛠️ Instalación
-
-1. Copia el módulo en la ruta de addons de Odoo:
-
