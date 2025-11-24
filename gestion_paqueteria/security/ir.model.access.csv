@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_paqueteria_paquete,access_paqueteria_paquete,model_paqueteria_paquete,base.group_user,1,1,1,1
+access_paqueteria_seguimiento,access_paqueteria_seguimiento,model_paqueteria_seguimiento,base.group_user,1,1,1,1
+access_paqueteria_camion,access_paqueteria_camion,model_paqueteria_camion,base.group_user,1,1,1,1
+access_paqueteria_empresa,access_paqueteria_empresa,model_paqueteria_empresa,base.group_user,1,1,1,1

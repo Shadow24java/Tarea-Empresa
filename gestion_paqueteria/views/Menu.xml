@@ -1,0 +1,29 @@
+<odoo>
+
+   
+    <menuitem id="menu_paqueteria_root" name="Paquetería"/>
+    <menuitem id="menu_paqueteria_paquetes"
+              parent="menu_paqueteria_root"
+              name="Paquetes"
+              action="action_paqueteria_paquete"/>
+
+  
+    <menuitem id="menu_paqueteria_seguimiento"
+              parent="menu_paqueteria_root"
+              name="Seguimiento"
+              action="action_paqueteria_seguimiento"/>
+
+   
+    <menuitem id="menu_paqueteria_camion"
+              parent="menu_paqueteria_root"
+              name="Camiones"
+              action="action_paqueteria_camion"/>
+
+    <menuitem
+    id="menu_paqueteria_empresa"
+    parent="menu_paqueteria_root"
+    name="Empresas"
+    action="action_paqueteria_empresa"
+/>
+
+</odoo>

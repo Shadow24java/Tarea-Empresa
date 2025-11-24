@@ -1,0 +1,16 @@
+<odoo>
+    <record id="model_paqueteria_paquete" model="ir.model">
+        <field name="name">paqueteria.paquete</field>
+        <field name="model">paqueteria.paquete</field>
+    </record>
+
+    <record id="model_paqueteria_seguimiento" model="ir.model">
+        <field name="name">paqueteria.seguimiento</field>
+        <field name="model">paqueteria.seguimiento</field>
+    </record>
+
+    <record id="model_paqueteria_camion" model="ir.model">
+        <field name="name">paqueteria.camion</field>
+        <field name="model">paqueteria.camion</field>
+    </record>
+</odoo>
