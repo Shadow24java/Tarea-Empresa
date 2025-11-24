@@ -1,0 +1,60 @@
+Módulo de Gestión de Paquetería
+
+Descripción
+Este módulo permite gestionar una empresa de paquetería. 
+Incluyendo:
+
+- Empresas de transporte
+- Camiones asignados a cada empresa
+- Paquetes enviados
+- Historial de seguimiento del estado de cada paquete
+
+Modelos incluidos
+
+1. paqueteria.empresa
+Representa una empresa de transporte.
+
+Campos:
+- Nombre
+- Teléfono
+- Dirección
+- Lista de camiones asignados
+
+2. paqueteria.camion
+Representa un camión de reparto.
+
+Campos:
+- Matrícula
+- Empresa asociada
+- Conductor actual
+- Conductores anteriores
+- Fecha de última ITV
+- Paquetes transportados
+
+3. paqueteria.paquete
+Representa un paquete enviado.
+
+Campos:
+- Número de seguimiento
+- Remitente
+- Destinatario
+- Dirección completa
+- Camión al que va asignado
+- Lista de actualizaciones
+
+4. paqueteria.seguimiento
+Registra los eventos del envío de un paquete.
+
+Campos:
+- Fecha
+- Estado
+- Notas
+- Paquete asociado
+
+
+Funcionalidades
+
+- Crear empresas de transporte.
+- Asignar camiones a cada empresa.
+- Registrar paquetes y asociarlos a camiones.
+- Llevar un historial de seguimiento por paquete.
