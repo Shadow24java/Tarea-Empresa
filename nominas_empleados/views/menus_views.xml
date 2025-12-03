@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    
+    <menuitem id="menu_nominas_root"
+              name="Gestión de Nóminas"
+              sequence="10"/>
+
+    <record id="action_nomina_empleado" model="ir.actions.act_window">
+        <field name="name">Empleados</field>
+        <field name="res_model">nomina.empleado</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_nominas_empleados"
+              name="Empleados"
+              parent="menu_nominas_root"
+              action="action_nomina_empleado"
+              sequence="10"/>
+
+    <record id="action_nomina_nomina" model="ir.actions.act_window">
+        <field name="name">Nóminas</field>
+        <field name="res_model">nomina.nomina</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_nominas_nominas"
+              name="Nóminas"
+              parent="menu_nominas_root"
+              action="action_nomina_nomina"
+              sequence="20"/>
+
+    <record id="action_nomina_declaracion" model="ir.actions.act_window">
+        <field name="name">Declaraciones de Renta</field>
+        <field name="res_model">nomina.declaracion.renta</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_nominas_declaraciones"
+              name="Declaraciones de Renta"
+              parent="menu_nominas_root"
+              action="action_nomina_declaracion"
+              sequence="30"/>
+
+</odoo>

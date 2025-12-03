@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista listado Declaración de renta -->
+    <record id="view_nomina_declaracion_list" model="ir.ui.view">
+        <field name="name">nomina.declaracion.renta.list</field>
+        <field name="model">nomina.declaracion.renta</field>
+        <field name="arch" type="xml">
+            <list string="Declaraciones de Renta">
+                <field name="name"/>
+                <field name="anio"/>
+                <field name="empleado_id"/>
+                <field name="sueldo_bruto_total"/>
+                <field name="impuestos_irpf_pagados"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista formulario Declaración de renta -->
+    <record id="view_nomina_declaracion_form" model="ir.ui.view">
+        <field name="name">nomina.declaracion.renta.form</field>
+        <field name="model">nomina.declaracion.renta</field>
+        <field name="arch" type="xml">
+            <form string="Declaración de la Renta">
+                <sheet>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="anio"/>
+                        <field name="empleado_id"/>
+                    </group>
+
+                    <group>
+                        <field name="sueldo_bruto_total" readonly="1"/>
+                        <field name="impuestos_irpf_pagados" readonly="1"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Nóminas incluidas">
+                            <field name="nomina_ids">
+                                <list string="Nóminas">
+                                    <field name="name"/>
+                                    <field name="fecha"/>
+                                    <field name="sueldo_bruto"/>
+                                    <field name="irpf_pagado"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

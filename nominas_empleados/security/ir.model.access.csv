@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nomina_empleado_user,access_nomina_empleado_user,model_nomina_empleado,base.group_user,1,1,1,1
+access_nomina_nomina_user,access_nomina_nomina_user,model_nomina_nomina,base.group_user,1,1,1,1
+access_nomina_linea_user,access_nomina_linea_user,model_nomina_linea,base.group_user,1,1,1,1
+access_nomina_declaracion_renta_user,access_nomina_declaracion_renta_user,model_nomina_declaracion_renta,base.group_user,1,1,1,1

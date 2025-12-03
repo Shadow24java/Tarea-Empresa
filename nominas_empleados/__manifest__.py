@@ -1,0 +1,20 @@
+{
+    "name": "Gestión de Nóminas de Empleados",
+    "version": "18.0.1.0.0",
+    "author": "Tu Nombre",
+    "license": "LGPL-3",
+    "category": "Human Resources",
+    "summary": "Gestión de nóminas, bonificaciones, deducciones y declaración de la renta anual",
+    "depends": ["base"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/empleado_views.xml",
+        "views/nomina_views.xml",
+        "views/declaracion_renta_views.xml",
+        "views/menus_views.xml",
+        "views/templates.xml",
+        "views/views.xml",
+    ],
+    "installable": True,
+    "application": True,
+}

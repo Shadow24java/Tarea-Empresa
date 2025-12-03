@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Vista listado de Nóminas -->
+    <record id="view_nomina_nomina_list" model="ir.ui.view">
+        <field name="name">nomina.nomina.list</field>
+        <field name="model">nomina.nomina</field>
+        <field name="arch" type="xml">
+            <list string="Nóminas">
+                <field name="name"/>
+                <field name="empleado_id"/>
+                <field name="fecha"/>
+                <field name="sueldo_base"/>
+                <field name="total_bonificaciones"/>
+                <field name="total_deducciones"/>
+                <field name="sueldo_neto"/>
+                <field name="estado"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista formulario de Nómina -->
+    <record id="view_nomina_nomina_form" model="ir.ui.view">
+        <field name="name">nomina.nomina.form</field>
+        <field name="model">nomina.nomina</field>
+        <field name="arch" type="xml">
+            <form string="Nómina">
+                <sheet>
+                    <header>
+                        <field name="estado" widget="statusbar"
+                               statusbar_visible="redactada,confirmada,pagada"/>
+                    </header>
+
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="empleado_id"/>
+                        <field name="fecha"/>
+                    </group>
+
+                    <group>
+                        <field name="sueldo_base"/>
+                        <field name="irpf_porcentaje"/>
+                        <field name="sueldo_bruto" readonly="1"/>
+                        <field name="irpf_pagado" readonly="1"/>
+                        <field name="sueldo_neto" readonly="1"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Bonificaciones y Deducciones">
+                            <field name="linea_ids">
+                                <list string="Líneas" editable="bottom">
+                                    <field name="tipo"/>
+                                    <field name="concepto"/>
+                                    <field name="importe_bruto"/>
+                                </list>
+                            </field>
+                            <group>
+                                <field name="total_bonificaciones" readonly="1"/>
+                                <field name="total_deducciones" readonly="1"/>
+                            </group>
+                        </page>
+
+                        <page string="Justificante">
+                            <group>
+                                <field name="justificante_pdf" filename="justificante_filename"/>
+                                <field name="justificante_filename"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

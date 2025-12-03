@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_nomina_empleado_list" model="ir.ui.view">
+        <field name="name">nomina.empleado.list</field>
+        <field name="model">nomina.empleado</field>
+        <field name="arch" type="xml">
+            <list string="Empleados">
+                <field name="name"/>
+                <field name="dni"/>
+                <field name="email"/>
+                <field name="telefono"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_nomina_empleado_form" model="ir.ui.view">
+        <field name="name">nomina.empleado.form</field>
+        <field name="model">nomina.empleado</field>
+        <field name="arch" type="xml">
+            <form string="Empleado">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="dni"/>
+                        <field name="email"/>
+                        <field name="telefono"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Nóminas">
+                            <field name="nomina_ids">
+                                <list string="Nóminas">
+                                    <field name="name"/>
+                                    <field name="fecha"/>
+                                    <field name="sueldo_base"/>
+                                    <field name="sueldo_neto"/>
+                                    <field name="estado"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Declaraciones de Renta">
+                            <field name="declaracion_ids">
+                                <list string="Declaraciones">
+                                    <field name="name"/>
+                                    <field name="anio"/>
+                                    <field name="sueldo_bruto_total"/>
+                                    <field name="impuestos_irpf_pagados"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
