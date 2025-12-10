@@ -65,7 +65,7 @@ class DeclaracionRenta(models.Model):
     @api.constrains("nomina_ids", "anio", "empleado_id")
     def _check_nominas(self):
         for decl in self:
-            # Máximo 14 nóminas
+            
             if len(decl.nomina_ids) > 14:
                 raise ValidationError("Una declaración solo puede tener un máximo de 14 nóminas.")
 
