@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+    <menuitem id="menu_guarderia_root"
+              name="Guardería"
+              sequence="10"/>
+
+    <menuitem id="menu_guarderia_servicios"
+              name="Servicios"
+              parent="menu_guarderia_root"
+              action="action_guarderia_servicio"
+              sequence="10"/>
+</odoo>
