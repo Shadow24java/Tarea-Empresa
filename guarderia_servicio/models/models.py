@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class guarderia_servicio(models.Model):
-#     _name = 'guarderia_servicio.guarderia_servicio'
-#     _description = 'guarderia_servicio.guarderia_servicio'
+# class /var/lib/odoo/addons/18.0/servicio_guarderia(models.Model):
+#     _name = '/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia'
+#     _description = '/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia'
 
 #     name = fields.Char()
 #     value = fields.Integer()

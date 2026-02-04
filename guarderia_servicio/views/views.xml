@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
 <!--
-    <record model="ir.ui.view" id="guarderia_servicio.list">
-      <field name="name">guarderia_servicio list</field>
-      <field name="model">guarderia_servicio.guarderia_servicio</field>
+    <record model="ir.ui.view" id="/var/lib/odoo/addons/18.0/servicio_guarderia.list">
+      <field name="name">/var/lib/odoo/addons/18.0/servicio_guarderia list</field>
+      <field name="model">/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia</field>
       <field name="arch" type="xml">
         <list>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
 <!--
-    <record model="ir.actions.act_window" id="guarderia_servicio.action_window">
-      <field name="name">guarderia_servicio window</field>
-      <field name="res_model">guarderia_servicio.guarderia_servicio</field>
+    <record model="ir.actions.act_window" id="/var/lib/odoo/addons/18.0/servicio_guarderia.action_window">
+      <field name="name">/var/lib/odoo/addons/18.0/servicio_guarderia window</field>
+      <field name="res_model">/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia</field>
       <field name="view_mode">list,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
 <!--
-    <record model="ir.actions.server" id="guarderia_servicio.action_server">
-      <field name="name">guarderia_servicio server</field>
-      <field name="model_id" ref="model_guarderia_servicio_guarderia_servicio"/>
+    <record model="ir.actions.server" id="/var/lib/odoo/addons/18.0/servicio_guarderia.action_server">
+      <field name="name">/var/lib/odoo/addons/18.0/servicio_guarderia server</field>
+      <field name="model_id" ref="model_/var/lib/odoo/addons/18.0/servicio_guarderia_/var/lib/odoo/addons/18.0/servicio_guarderia"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
 <!--
-    <menuitem name="guarderia_servicio" id="guarderia_servicio.menu_root"/>
+    <menuitem name="/var/lib/odoo/addons/18.0/servicio_guarderia" id="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_root"/>
 -->
     <!-- menu categories -->
 <!--
-    <menuitem name="Menu 1" id="guarderia_servicio.menu_1" parent="guarderia_servicio.menu_root"/>
-    <menuitem name="Menu 2" id="guarderia_servicio.menu_2" parent="guarderia_servicio.menu_root"/>
+    <menuitem name="Menu 1" id="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_1" parent="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_root"/>
+    <menuitem name="Menu 2" id="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_2" parent="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_root"/>
 -->
     <!-- actions -->
 <!--
-    <menuitem name="List" id="guarderia_servicio.menu_1_list" parent="guarderia_servicio.menu_1"
-              action="guarderia_servicio.action_window"/>
-    <menuitem name="Server to list" id="guarderia_servicio" parent="guarderia_servicio.menu_2"
-              action="guarderia_servicio.action_server"/>
+    <menuitem name="List" id="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_1_list" parent="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_1"
+              action="/var/lib/odoo/addons/18.0/servicio_guarderia.action_window"/>
+    <menuitem name="Server to list" id="/var/lib/odoo/addons/18.0/servicio_guarderia" parent="/var/lib/odoo/addons/18.0/servicio_guarderia.menu_2"
+              action="/var/lib/odoo/addons/18.0/servicio_guarderia.action_server"/>
 -->
   </data>
 </odoo>

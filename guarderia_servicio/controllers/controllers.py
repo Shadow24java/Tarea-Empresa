@@ -2,21 +2,21 @@
 # from odoo import http
 
 
-# class GuarderiaServicio(http.Controller):
-#     @http.route('/guarderia_servicio/guarderia_servicio', auth='public')
+# class /var/lib/odoo/addons/18.0/servicioGuarderia(http.Controller):
+#     @http.route('//var/lib/odoo/addons/18.0/servicio_guarderia//var/lib/odoo/addons/18.0/servicio_guarderia', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/guarderia_servicio/guarderia_servicio/objects', auth='public')
+#     @http.route('//var/lib/odoo/addons/18.0/servicio_guarderia//var/lib/odoo/addons/18.0/servicio_guarderia/objects', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('guarderia_servicio.listing', {
-#             'root': '/guarderia_servicio/guarderia_servicio',
-#             'objects': http.request.env['guarderia_servicio.guarderia_servicio'].search([]),
+#         return http.request.render('/var/lib/odoo/addons/18.0/servicio_guarderia.listing', {
+#             'root': '//var/lib/odoo/addons/18.0/servicio_guarderia//var/lib/odoo/addons/18.0/servicio_guarderia',
+#             'objects': http.request.env['/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia'].search([]),
 #         })
 
-#     @http.route('/guarderia_servicio/guarderia_servicio/objects/<model("guarderia_servicio.guarderia_servicio"):obj>', auth='public')
+#     @http.route('//var/lib/odoo/addons/18.0/servicio_guarderia//var/lib/odoo/addons/18.0/servicio_guarderia/objects/<model("/var/lib/odoo/addons/18.0/servicio_guarderia./var/lib/odoo/addons/18.0/servicio_guarderia"):obj>', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('guarderia_servicio.object', {
+#         return http.request.render('/var/lib/odoo/addons/18.0/servicio_guarderia.object', {
 #             'object': obj
 #         })
 
